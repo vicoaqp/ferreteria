@@ -3,79 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Naruto</title>
+    <title>Aplao Conection - Cuentas Streaming y Servicios Digitales</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #0f1016;
             color: #ffffff;
-            text-align: center;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            text-align: center;
         }
-        h1 {
-            color: #ff8c00;
+        header {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        header h1 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+            color: #e0e0e0;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 25px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .card {
-            background-color: #2b2b2b;
-            border-radius: 10px;
-            padding: 15px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background-color: #1a1c29;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 260px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            border: 1px solid #2a2e43;
+        }
+        .card:hover {
+            transform: translateY(-8px);
         }
         .card img {
             width: 100%;
-            height: 200px;
+            height: 160px;
             object-fit: cover;
-            border-radius: 5px;
+        }
+        .card-content {
+            padding: 20px;
         }
         .card h3 {
-            margin: 10px 0 5px 0;
-            color: #ffcc00;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+            font-size: 1.4em;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #00ffcc;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe5d;
+        }
+        footer {
+            background-color: #141622;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #222538;
         }
     </style>
 </head>
 <body>
 
-    <h1>Personajes de Naruto</h1>
-    <p>Una página sencilla con imágenes cargadas desde internet.</p>
+    <header>
+        <h1>Aplao Conection</h1>
+        <p>Tu mejor entretenimiento al alcance de un clic. Cuentas 100% seguras y garantizadas.</p>
+    </header>
 
     <div class="container">
-        <!-- Personaje 1 -->
+        <!-- Netflix -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500" alt="Naruto Uzumaki">
-            <h3>Naruto Uzumaki</h3>
-            <p>El ninja hiperactivo y cabeza hueca de Konoha.</p>
+            <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500" alt="Netflix">
+            <div class="card-content">
+                <h3>Netflix</h3>
+                <div class="price">S/ 15.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20una%20cuenta%20de%20Netflix%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
         </div>
 
-        <!-- Personaje 2 -->
+        <!-- HBO Max / Max -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500" alt="Sasuke Uchiha">
-            <h3>Sasuke Uchiha</h3>
-            <p>El último sobreviviente del clan Uchiha.</p>
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500" alt="Max HBO">
+            <div class="card-content">
+                <h3>Max (HBO)</h3>
+                <div class="price">S/ 12.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20una%20cuenta%20de%20Max%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
         </div>
 
-        <!-- Personaje 3 -->
+        <!-- Disney+ -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=500" alt="Kakashi Hatake">
-            <h3>Kakashi Hatake</h3>
-            <p>El Ninja que copia y ex-líder del Equipo 7.</p>
+            <img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=500" alt="Disney Plus">
+            <div class="card-content">
+                <h3>Disney+</h3>
+                <div class="price">S/ 12.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20una%20cuenta%20de%20Disney%20Plus%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
         </div>
 
-        <!-- Nuevo Personaje 4 (Agregado) -->
+        <!-- Amazon Prime Video -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=500" alt="Itachi Uchiha">
-            <h3>Itachi Uchiha</h3>
-            <p>Un prodigio del clan Uchiha y miembro de Akatsuki.</p>
+            <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=500" alt="Prime Video">
+            <div class="card-content">
+                <h3>Prime Video</h3>
+                <div class="price">S/ 10.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20una%20cuenta%20de%20Prime%20Video%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Canva Pro -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500" alt="Canva Pro">
+            <div class="card-content">
+                <h3>Canva Pro</h3>
+                <div class="price">S/ 8.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20Canva%20Pro%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Paramount+ -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500" alt="Paramount Plus">
+            <div class="card-content">
+                <h3>Paramount+</h3>
+                <div class="price">S/ 10.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20Paramount%20Plus%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Vix+ -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500" alt="Vix Premium">
+            <div class="card-content">
+                <h3>Vix Premium</h3>
+                <div class="price">S/ 10.00 / mes</div>
+                <a href="https://wa.me/51900000000?text=Hola,%20quiero%20comprar%20Vix%20Premium%20en%20Aplao%20Conection" class="btn-whatsapp" target="_blank">Pedir por WhatsApp</a>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Aplao Conection - Todos los derechos reservados. Atendiendo en Aplao y todo Arequipa.</p>
+    </footer>
 
 </body>
 </html>
